@@ -1,4 +1,5 @@
 import React from 'react';
+import Top from './Top.json'
 
 class TopArea extends React.Component {
     render() {
@@ -16,11 +17,18 @@ class TopArea extends React.Component {
                             <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                 <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                                     <li className="scroll active"><a href="#home">home</a></li>
-                                    <li className="scroll"><a href="#works">how it works</a></li>
-                                    <li className="scroll"><a href="#explore">explore</a></li>
-                                    <li className="scroll"><a href="#reviews">review</a></li>
-                                    <li className="scroll"><a href="#blog">blog</a></li>
-                                    <li className="scroll"><a href="#contact">contact</a></li>
+                                    {Top.map((value) => {
+                                        return<li className="scroll"><a href="#contact">{value.name}</a></li>
+                                        //  <li className="active">
+                                        //     <a href="#">{value.name} <i className="icofont-rounded-down"></i></a>
+                                        //     <ul className="dropdown">
+                                        //         <li><a href="index.html">{value.prop}</a></li>
+                                        //     </ul>
+                                        // </li>
+
+
+                                    })}
+                                   
                                 </ul>
                             </div>
                         </div>
