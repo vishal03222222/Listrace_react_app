@@ -37,7 +37,7 @@ class Reviews extends React.Component {
                     <p>What our client say about us</p>
                 </div>
                 <div className="reviews-content">
-                    <div className="testimonial-carousel">
+                    <div className="testimonial-carousel" style={{display:'flex',marginLeft:'30px'}}>
                         {testimonials.map((testimonial, index) => (
                             <div className="single-testimonial-box" key={index}>
                                 <div className="testimonial-description">

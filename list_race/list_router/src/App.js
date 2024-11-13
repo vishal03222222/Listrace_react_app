@@ -12,6 +12,7 @@ import Subscription from './COMPONENTS/Subscriptionstrat';
 import Footer from './COMPONENTS/Footer';
 import TopArea from './COMPONENTS/Toparea';
 import { Route, Routes } from 'react-router-dom';
+import Contact from './COMPONENTS/Contact';
 
 
 
@@ -24,7 +25,7 @@ function App() {
       <Route path='/explore' element={<ExploreSection/>}/>
       <Route path='/review' element={<Reviews/>}/><Route path='/' element={<HeaderTop/>}/>
       <Route path='/blog' element={<Blog/>}/>
-      <Route path='/contact' element={<HeaderTop/>}/>
+      <Route path='/contact' element={<Contact/>}/>
     </Routes>
 
       <HeaderTop/>
