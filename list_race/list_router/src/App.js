@@ -13,11 +13,12 @@ import Footer from './COMPONENTS/Footer';
 import TopArea from './COMPONENTS/Toparea';
 import { Route, Routes } from 'react-router-dom';
 
+
 function App() {
   return (
     <div className="App">
     <Routes>
-      <Route/>
+      <Route />
     </Routes>
       <HeaderTop/>
       <TopArea/>
