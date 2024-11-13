@@ -14,12 +14,19 @@ import TopArea from './COMPONENTS/Toparea';
 import { Route, Routes } from 'react-router-dom';
 
 
+
 function App() {
   return (
     <div className="App">
     <Routes>
-      <Route />
+      <Route path='/' element={<HeaderTop/>}/>
+      <Route path='/works' element={<Works/>}/>
+      <Route path='/explore' element={<ExploreSection/>}/>
+      <Route path='/review' element={<Reviews/>}/><Route path='/' element={<HeaderTop/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='/contact' element={<HeaderTop/>}/>
     </Routes>
+
       <HeaderTop/>
       <TopArea/>
       

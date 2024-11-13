@@ -1,5 +1,6 @@
 import React from 'react';
 import Top from './Top.json'
+import { Link } from 'react-router-dom';
 
 class TopArea extends React.Component {
     render() {
@@ -16,9 +17,16 @@ class TopArea extends React.Component {
                             </div>
                             <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                                 <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                                    <li className="scroll active"><a href="#home">home</a></li>
-                                    {Top.map((value) => {
-                                        return<li className="scroll"><a href="#contact">{value.name}</a></li>
+                                    <li className="scroll active"><Link to={'/'} >Home</Link></li>
+                                    <li className="scroll active"><Link to={'/works'} >How it works</Link></li>
+
+                                    <li className="scroll active"><Link to={'/explore'} >explore</Link></li>
+                                    <li className="scroll active"><Link to={'/review'} >review</Link></li>
+                                    <li className="scroll active"><Link to={'/Blog'} >blog</Link></li>
+                                    <li className="scroll active"><Link to={'/contact'} >contact</Link></li>
+                                    
+                                    {/* {Top.map((value) => {
+                                        return<li className="scroll"><Link to={'/{value.name}'}>{value.name}</Link></li>
                                         //  <li className="active">
                                         //     <a href="#">{value.name} <i className="icofont-rounded-down"></i></a>
                                         //     <ul className="dropdown">
@@ -27,7 +35,7 @@ class TopArea extends React.Component {
                                         // </li>
 
 
-                                    })}
+                                    })} */}
                                    
                                 </ul>
                             </div>
